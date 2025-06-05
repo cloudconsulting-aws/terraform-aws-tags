@@ -27,3 +27,17 @@ variable "project_name" {
   description = "The name of the project associated with the resources"
   type        = string
 }
+
+variable "confidential" {
+  description = "Boolean indicating whether the resource is confidential"
+  type        = bool
+  default     = false
+
+}
+
+variable "backup_enabled" {
+  description = "Boolean indicating whether backups are enabled for the resource"
+  type        = bool
+  default     = false
+
+}

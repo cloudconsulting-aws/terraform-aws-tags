@@ -14,6 +14,8 @@ module "aws_tags" {
     repository              = "github.com/example/repo"
     cost_center             = "12345"
     project_name            = "Example Project"
+    confidential            = false
+    backup_enabled          = false
 }
 ```
 
@@ -27,6 +29,8 @@ module "aws_tags" {
 | `repository`          | The repository associated with the resources.            | `string`| N/A     | Yes      |
 | `cost_center`         | The cost center associated with the resources.           | `string`| N/A     | Yes      |
 | `project_name`        | The name of the project associated with the resources.   | `string`| N/A     | Yes      |
+| `confidential`        | Boolean indicating whether the resource is confidential. | `bool`  | `false` | No       |
+| `backup_enabled`      | Boolean indicating whether backups are enabled for the resource. | `bool`  | `false` | No       |
 
 ## Outputs
 
